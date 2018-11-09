@@ -24,7 +24,7 @@ namespace TicTacToeMVVM.Commands
         public event EventHandler CanExecuteChanged;
         public void Execute(object parameter)
         {
-            _tac.ChangeType();
+            _tac.ChangeType(parameter);
         }
 
         #endregion
